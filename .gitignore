@@ -1,6 +1,21 @@
-*.class
+# generic files to ignore
+*.log
+*.tmp
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+[Tt]humbs.db
 
-# Package Files #
+#Eclipse files
+.project
+.classpath
+.settings
+
+#Java and Maven
+*.class
 *.jar
-*.war
-*.ear
+target
+lib
+
