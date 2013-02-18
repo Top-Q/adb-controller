@@ -12,15 +12,12 @@ import org.jsystemtest.mobile.core.AdbController;
 import org.jsystemtest.mobile.core.AdbControllerException;
 import org.jsystemtest.mobile.core.ConnectionException;
 
-import com.android.ddmlib.AdbCommandRejectedException;
 import com.android.ddmlib.AndroidDebugBridge;
 import com.android.ddmlib.IDevice;
 import com.android.ddmlib.IShellOutputReceiver;
 import com.android.ddmlib.InstallException;
 import com.android.ddmlib.RawImage;
-import com.android.ddmlib.ShellCommandUnresponsiveException;
 import com.android.ddmlib.SyncService;
-import com.android.ddmlib.TimeoutException;
 
 public abstract class AbstractAndroidDevice implements IShellOutputReceiver {
 	private final static Logger logger = Logger.getLogger(AbstractAndroidDevice.class);
@@ -297,5 +294,9 @@ public abstract class AbstractAndroidDevice implements IShellOutputReceiver {
 
 	public String getSerialNumber() {
 		return device.getSerialNumber();
+	}
+	
+	public String getBrand(){
+		return device.getProperty("ro.product.brand");
 	}
 }
