@@ -5,7 +5,7 @@
 
 	<groupId>org.jsystemtest.mobile</groupId>
 	<artifactId>AdbController</artifactId>
-	<version>1.0.02</version>
+	<version>1.0.03-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>AdbController</name>
 	<url>http://maven.apache.org</url>
