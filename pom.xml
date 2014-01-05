@@ -5,7 +5,7 @@
 
 	<groupId>org.jsystemtest.mobile</groupId>
 	<artifactId>AdbController</artifactId>
-	<version>1.0.00</version>
+	<version>1.0.02</version>
 	<packaging>jar</packaging>
 	<name>AdbController</name>
 	<url>http://maven.apache.org</url>
@@ -62,6 +62,19 @@
 						</manifest>
 					</archive>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
