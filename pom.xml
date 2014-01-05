@@ -12,8 +12,10 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<topq.repository.rootUrl>http://maven.top-q.co.il</topq.repository.rootUrl>
 	</properties>
 
+		
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -88,5 +90,17 @@
 
 		</plugins>
 	</build>
-
+	<distributionManagement>
+		<repository>
+			<id>topq</id>
+			<name>RepositoryProxy</name>
+			<url>${topq.repository.rootUrl}/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>topq</id>
+			<name>RepositoryProxy</name>
+			<url>${topq.repository.rootUrl}/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 </project>
